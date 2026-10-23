@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
+<title id="title">SQL lab / EER study</title>
+<desc id="desc">Enhanced conceptual model of lab work. WorkItem has an underlined work_id identifier and a title attribute. It specializes into SQLNote and DesignNote. The circle marked o denotes overlapping membership: one item may be both types. The single line from WorkItem denotes partial specialization: an item may be neither. Both subtypes inherit WorkItem attributes. This is a modelling study, not an implemented database schema.</desc>
+<path d="M310 70 L385 70" fill="none" stroke="#919BA7" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M575 70 L650 70" fill="none" stroke="#919BA7" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M480 102 L480 168" fill="none" stroke="#919BA7" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M460 207 L270 288" fill="none" stroke="#919BA7" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M500 207 L690 288" fill="none" stroke="#919BA7" stroke-width="1.7" stroke-linejoin="round"/>
+<ellipse cx="220" cy="70" rx="90" ry="29" fill="none" stroke="#919BA7" stroke-width="1.5"/><text x="220" y="77" fill="#E6EDF3" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">work_id</text><path d="M184.0 81 L256.0 81" fill="none" stroke="#919BA7" stroke-width="1.7" stroke-linejoin="round"/>
+<ellipse cx="725" cy="70" rx="75" ry="29" fill="none" stroke="#919BA7" stroke-width="1.5"/><text x="725" y="77" fill="#E6EDF3" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">title</text>
+<rect x="385.0" y="38.0" width="190" height="64" fill="none" stroke="#919BA7" stroke-width="1.7"/><text x="480" y="78" fill="#E6EDF3" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="500" text-anchor="middle">WorkItem</text>
+<circle cx="480" cy="192" r="24" fill="none" stroke="#919BA7" stroke-width="1.7"/>
+<text x="480" y="200" fill="#E6EDF3" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="400" text-anchor="middle">o</text>
+<rect x="175.0" y="288.0" width="190" height="64" fill="none" stroke="#919BA7" stroke-width="1.7"/><text x="270" y="328" fill="#E6EDF3" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="500" text-anchor="middle">SQLNote</text>
+<rect x="595.0" y="288.0" width="190" height="64" fill="none" stroke="#919BA7" stroke-width="1.7"/><text x="690" y="328" fill="#E6EDF3" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="500" text-anchor="middle">DesignNote</text>
+</svg>

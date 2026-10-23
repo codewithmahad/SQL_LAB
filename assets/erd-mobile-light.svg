@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="555" viewBox="0 0 480 555" role="img" aria-labelledby="title desc">
+<title id="title">SQL lab / logical model</title>
+<desc id="desc">Logical view of the same lab model. Topic has primary key topic_id and title. Exercise has primary key exercise_id, foreign key topic_id, and title. Each Exercise belongs to exactly one Topic; a Topic can have zero or many Exercises. The dashed non-identifying relationship leaves exercise_id as an independent primary key. This is a modelling study, not an implemented database schema.</desc>
+<rect x="55" y="25" width="370" height="152" rx="5" fill="none" stroke="#6E7781" stroke-width="1.7"/>
+<path d="M55 81 L425 81" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<text x="77" y="61" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="600" text-anchor="start">Topic</text>
+<text x="77" y="111" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">topic_id</text>
+<text x="405" y="110" fill="#57606A" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" text-anchor="end">PK</text>
+<text x="77" y="153" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">title</text>
+<rect x="55" y="335" width="370" height="194" rx="5" fill="none" stroke="#6E7781" stroke-width="1.7"/>
+<path d="M55 391 L425 391" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<text x="77" y="371" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="600" text-anchor="start">Exercise</text>
+<text x="77" y="421" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">exercise_id</text>
+<text x="405" y="420" fill="#57606A" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" text-anchor="end">PK</text>
+<text x="77" y="463" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">topic_id</text>
+<text x="405" y="462" fill="#57606A" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" text-anchor="end">FK</text>
+<text x="77" y="505" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="start">title</text>
+<path d="M240 177 L240 290" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<path d="M228 195 L252 195" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M228 205 L252 205" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<circle cx="240" cy="297" r="7" fill="none" stroke="#6E7781" stroke-width="1.7"/>
+<path d="M240 304 L240 335" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M227 335 L240 316 L253 335" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<text x="264" y="258" fill="#57606A" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">contains</text>
+</svg>

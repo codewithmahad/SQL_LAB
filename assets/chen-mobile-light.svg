@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="630" viewBox="0 0 480 630" role="img" aria-labelledby="title desc">
+<title id="title">SQL lab / Chen study</title>
+<desc id="desc">Personal lab study in Chen notation. Topic and Exercise are rectangular entities, joined by a contains relationship diamond with one-to-many cardinality. Exercise has total participation, shown by a double line: each exercise belongs to a topic. Each entity has an oval title attribute and an underlined identifier attribute, topic_id or exercise_id. This is a modelling study, not an implemented database schema.</desc>
+<path d="M202 140 L126 82" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M278 140 L354 82" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M240 204 L240 268" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M236 357.8 L236 424" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M244 357.8 L244 424" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M202 488 L126 546" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<path d="M278 488 L354 546" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<rect x="155.0" y="140.0" width="170" height="64" fill="none" stroke="#6E7781" stroke-width="1.7"/><text x="240" y="180" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="500" text-anchor="middle">Topic</text>
+<rect x="155.0" y="424.0" width="170" height="64" fill="none" stroke="#6E7781" stroke-width="1.7"/><text x="240" y="464" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="23" font-weight="500" text-anchor="middle">Exercise</text>
+<path d="M155.0 314 L240 268.0 L325.0 314 L240 360.0 Z" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/><text x="240" y="321" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="400" text-anchor="middle">contains</text>
+<ellipse cx="115" cy="54" rx="88" ry="29" fill="none" stroke="#6E7781" stroke-width="1.5"/><text x="115" y="61" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">topic_id</text><path d="M78.0 65 L152.0 65" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<ellipse cx="365" cy="54" rx="67" ry="29" fill="none" stroke="#6E7781" stroke-width="1.5"/><text x="365" y="61" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">title</text>
+<ellipse cx="115" cy="574" rx="94" ry="29" fill="none" stroke="#6E7781" stroke-width="1.5"/><text x="115" y="581" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">exercise_id</text><path d="M66.0 585 L164.0 585" fill="none" stroke="#6E7781" stroke-width="1.7" stroke-linejoin="round"/>
+<ellipse cx="365" cy="574" rx="67" ry="29" fill="none" stroke="#6E7781" stroke-width="1.5"/><text x="365" y="581" fill="#24292F" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">title</text>
+<text x="261" y="244" fill="#57606A" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">1</text>
+<text x="263" y="399" fill="#57606A" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle">N</text>
+</svg>

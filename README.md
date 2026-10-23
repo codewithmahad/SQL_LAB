@@ -49,6 +49,37 @@ My latest entry covers the database environment and basic expressions. This inde
 
 **Practice queue:** LeetCode SQL 50 and HackerRank SQL. Solutions will join the lab record as I work through them.
 
+## Database choice
+
+This lab is about **SQL and relational design**. PostgreSQL is where I put that work into practice; MySQL, SQLite, SQL Server, and Oracle are part of the wider database landscape.
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/databases-mobile-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/databases-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/databases-mobile-light.svg">
+  <img src="assets/databases-light.svg" alt="MySQL, SQLite, PostgreSQL, Microsoft SQL Server, and Oracle Database. PostgreSQL is highlighted as my working database." width="100%" loading="lazy">
+</picture>
+
+<details>
+<summary><strong>Why I picked PostgreSQL for my Java + Spring Boot path</strong></summary>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/backend-stack-mobile-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/backend-stack-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/backend-stack-mobile-light.svg">
+  <img src="assets/backend-stack-light.svg" alt="Java + Spring Boot + PostgreSQL — the backend stack I am building towards." width="100%" loading="lazy">
+</picture>
+
+I was looking for a modern, open-source database to learn and then use in my **Java + Spring Boot** projects. PostgreSQL was recommended to me for that path, so I chose it as the database for this lab.
+
+The practical fit matters to me: PostgreSQL is [free and open source](https://www.postgresql.org/about/), [pgJDBC](https://jdbc.postgresql.org/) connects it to Java, and [Spring Boot supports SQL access through JDBC and JPA](https://docs.spring.io/spring-boot/reference/data/sql.html). I can keep using the same database as I move from standalone queries to application work.
+
+For now, I'm learning the database itself. Later, I want to bring these queries and schema decisions into my own Spring Boot projects, with enough understanding to explain what happens behind a repository method. Performance is part of that learning too: indexes, query plans, and measuring the queries I actually write.
+
+</details>
+
 ## Schema sketchbook
 
 Database design belongs in this lab alongside the SQL. This is where I want to keep models, revisions, and the reasoning behind a schema.

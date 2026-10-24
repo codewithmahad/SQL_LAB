@@ -26,28 +26,32 @@ I use it to keep my SQL practice organised, track what I've covered, and find my
 
 **Current focus · PostgreSQL fundamentals**
 
-My latest entry covers the database environment and basic expressions. This index points to the work already in the repository; I'll add entries as I study and practise more topics.
+My recorded work covers the database environment, basic expressions, and four LeetCode filtering problems. This index points to the work already in the repository; I'll add entries as I study and practise more topics.
 
 <br clear="right">
 
 | Entry | Work recorded | File |
 | :--- | :--- | :--- |
 | **01 · Environment** | Database, role, schema, and arithmetic expressions. Five read-only statements. | [01_environment.sql](learning/postgresql/01_fundamentals/01_environment.sql) |
+| **LeetCode 1757 · Recyclable and Low Fat Products** | Filter products with `WHERE` and `AND`. | [1757_recyclable_and_low_fat_products.sql](practice/leetcode-sql-50/01_select/1757_recyclable_and_low_fat_products.sql) |
+| **LeetCode 595 · Big Countries** | Match either threshold with `OR`. | [0595_big_countries.sql](practice/leetcode-sql-50/01_select/0595_big_countries.sql) |
+| **LeetCode 584 · Find Customer Referee** | Exclude a referee while retaining `NULL` values. | [0584_find_customer_referee.sql](practice/leetcode-sql-50/01_select/0584_find_customer_referee.sql) |
+| **LeetCode 1683 · Invalid Tweets** | Filter by character count with `LENGTH`. | [1683_invalid_tweets.sql](practice/leetcode-sql-50/01_select/1683_invalid_tweets.sql) |
 
 ## Progress
 
-**Recorded** means there's work in the repo to revisit. **Planned** is still ahead of me.
+**Recorded** means there's work in the repo to revisit. **Started** means some of the area is covered. **Planned** is still ahead of me.
 
 | Area | Status | Coverage / next work |
 | :--- | :--- | :--- |
 | PostgreSQL environment | **Recorded** | Connection context and basic `SELECT` expressions. |
-| Query fundamentals | Planned | Data types, filtering, sorting, `NULL`, and aggregates. |
+| Query fundamentals | **Started** | Recorded: `SELECT`, filtering, `AND`/`OR`, `NULL`, and `LENGTH`. Next: data types, sorting, and aggregates. |
 | Relationships & modelling | Planned | Keys, joins, subqueries, Chen ER, relational ERD, and EER models. |
 | Data integrity | Planned | Constraints, schema decisions, data changes, and transactions. |
 | Advanced queries | Planned | CTEs, window functions, views, and PostgreSQL functions. |
 | Performance | Planned | Indexes, `EXPLAIN`, execution plans, and query comparisons. |
 
-**Practice queue:** LeetCode SQL 50 and HackerRank SQL. Solutions will join the lab record as I work through them.
+**Practice:** Four LeetCode SQL 50 solutions are recorded under [SELECT practice](practice/leetcode-sql-50/01_select/). HackerRank SQL is still planned.
 
 ## Database choice
 
@@ -141,6 +145,13 @@ SQL_LAB/
 │   └── postgresql/
 │       └── 01_fundamentals/
 │           └── 01_environment.sql
+├── practice/
+│   └── leetcode-sql-50/
+│       └── 01_select/
+│           ├── 1757_recyclable_and_low_fat_products.sql
+│           ├── 0595_big_countries.sql
+│           ├── 0584_find_customer_referee.sql
+│           └── 1683_invalid_tweets.sql
 ├── resources/
 │   └── sql-roadmap.pdf
 ├── assets/                         # README diagrams and logos
@@ -164,10 +175,11 @@ The shortcuts I want when I come back to a topic. As the lab grows, this will li
 | Looking for | Reference |
 | :--- | :--- |
 | My environment & expression work | [Environment entry](learning/postgresql/01_fundamentals/01_environment.sql) |
+| My LeetCode filtering solutions | [SELECT practice](practice/leetcode-sql-50/01_select/) |
 | My study roadmap | [SQL roadmap PDF](resources/sql-roadmap.pdf) |
 | PostgreSQL syntax & behaviour | [SQL reference](https://www.postgresql.org/docs/current/sql.html) |
 | Database, role & schema functions | [Session information functions](https://www.postgresql.org/docs/current/functions-info.html) |
-| Planned problem sets | [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) · [HackerRank SQL](https://www.hackerrank.com/domains/sql) |
+| Problem sets | [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) · [HackerRank SQL](https://www.hackerrank.com/domains/sql) |
 
 <br>
 

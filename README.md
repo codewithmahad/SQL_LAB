@@ -193,6 +193,11 @@ If something here is useful for your own revision, use it as a reference. Correc
 
 <br clear="right">
 
+## Common connection errors
+
+- **Connection refused:** Check that the PostgreSQL server is running and that the host and port are correct.
+- **Password authentication failed:** Check the database username, password, and authentication configuration. Never include passwords in repository files.
+
 <details>
 <summary><code>-- a note to future me</code></summary>
 

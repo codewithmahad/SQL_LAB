@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="248" height="146" viewBox="0 0 248 146" preserveAspectRatio="xMinYMid meet" role="img" aria-labelledby="title desc">
+<title id="title">Primary key to foreign key</title>
+<desc id="desc">Concept sketch: Topic.topic_id is a primary key referenced by Exercise.topic_id. The arrow indicates the matching key fields, not relationship cardinality.</desc>
+<rect x="6" y="12" width="126" height="62" rx="5" fill="#0d1117" stroke="#43586a" stroke-width="1.5"/>
+<text x="16" y="33" fill="#e6edf3" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Topic</text>
+<path d="M6 41L132 41" stroke="#43586a" stroke-width="1"/>
+<text x="16" y="61" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700" text-anchor="start">PK</text>
+<text x="40" y="61" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="400" text-anchor="start">topic_id</text>
+<rect x="102" y="76" width="126" height="62" rx="5" fill="#0d1117" stroke="#43586a" stroke-width="1.5"/>
+<text x="112" y="97" fill="#e6edf3" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" text-anchor="start">Exercise</text>
+<path d="M102 105L228 105" stroke="#43586a" stroke-width="1"/>
+<text x="112" y="125" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="12" font-weight="700" text-anchor="start">FK</text>
+<text x="136" y="125" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="400" text-anchor="start">topic_id</text>
+<path d="M132 59H240V125H228M235 118L228 125L235 132" fill="none" stroke="#8bbce3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

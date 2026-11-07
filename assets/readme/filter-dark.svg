@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="996" height="230" viewBox="0 0 996 230" preserveAspectRatio="xMinYMid meet" role="img" aria-labelledby="title desc">
+<title id="title">AND filtering: query, input, result</title>
+<desc id="desc">A worked illustration of LeetCode 1757. Products with IDs 0, 1, 2, and 3 have flag pairs Y/N, Y/Y, N/Y, and Y/Y. The saved query requires low_fats = &#x27;Y&#x27; AND recyclable = &#x27;Y&#x27; and returns IDs 1 and 3. Rows are illustrative; result order is unspecified.</desc>
+<text x="12" y="28" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" text-anchor="start">01</text>
+<text x="46" y="28" fill="#e6edf3" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" text-anchor="start">Write the conditions</text>
+<text x="383" y="28" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" text-anchor="start">02</text>
+<text x="417" y="28" fill="#e6edf3" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" text-anchor="start">Check the input rows</text>
+<text x="771" y="28" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="700" text-anchor="start">03</text>
+<text x="805" y="28" fill="#e6edf3" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600" text-anchor="start">Keep both matches</text>
+<text x="12" y="88" fill="#e6edf3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" xml:space="preserve"><tspan fill="#8bbce3" font-weight="700">SELECT</tspan><tspan> product_id</tspan></text>
+<text x="12" y="118" fill="#e6edf3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" xml:space="preserve"><tspan fill="#8bbce3" font-weight="700">FROM</tspan><tspan> Products</tspan></text>
+<text x="12" y="148" fill="#e6edf3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" xml:space="preserve"><tspan fill="#8bbce3" font-weight="700">WHERE</tspan><tspan> low_fats = &#x27;Y&#x27;</tspan></text>
+<text x="12" y="178" fill="#e6edf3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" xml:space="preserve"><tspan fill="#8bbce3" font-weight="700">  AND</tspan><tspan> recyclable = &#x27;Y&#x27;;</tspan></text>
+<text x="439.0" y="69" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" text-anchor="middle">product_id</text>
+<text x="537.0" y="69" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" text-anchor="middle">low_fats</text>
+<text x="632.0" y="69" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="14" font-weight="600" text-anchor="middle">recyclable</text>
+<path d="M383 82L685 82" stroke="#43586a" stroke-width="1"/>
+<text x="439.0" y="110" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="400" text-anchor="middle">0</text>
+<text x="537.0" y="110" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="400" text-anchor="middle">Y</text>
+<text x="632.0" y="110" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="400" text-anchor="middle">N</text>
+<rect x="383" y="121" width="302" height="32" rx="4" fill="#182d40"/>
+<text x="439.0" y="144" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="600" text-anchor="middle">1</text>
+<text x="537.0" y="144" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="600" text-anchor="middle">Y</text>
+<text x="632.0" y="144" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="600" text-anchor="middle">Y</text>
+<text x="439.0" y="178" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="400" text-anchor="middle">2</text>
+<text x="537.0" y="178" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="400" text-anchor="middle">N</text>
+<text x="632.0" y="178" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="400" text-anchor="middle">Y</text>
+<rect x="383" y="189" width="302" height="32" rx="4" fill="#182d40"/>
+<text x="439.0" y="212" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="600" text-anchor="middle">3</text>
+<text x="537.0" y="212" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="600" text-anchor="middle">Y</text>
+<text x="632.0" y="212" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="19" font-weight="600" text-anchor="middle">Y</text>
+<text x="771" y="69" fill="#a3b3c2" font-family="Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="600" text-anchor="start">product_id</text>
+<path d="M771 82L889 82" stroke="#43586a" stroke-width="1"/>
+<text x="829" y="112" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="23" font-weight="700" text-anchor="middle">1</text>
+<text x="829" y="146" fill="#8bbce3" font-family="Consolas, 'Liberation Mono', monospace" font-size="23" font-weight="700" text-anchor="middle">3</text>
+<path d="M352 50L352 221" stroke="#43586a" stroke-width="1"/>
+<path d="M737 50L737 221" stroke="#43586a" stroke-width="1"/>
+<text x="771" y="197" fill="#a3b3c2" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">AND: both are Y</text>
+</svg>

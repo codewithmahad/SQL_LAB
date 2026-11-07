@@ -1,211 +1,207 @@
-<a id="sql_lab"></a>
+<h1 id="sql_lab">
+  <a id="top"></a>
+  <a href="https://www.postgresql.org/"><img src="assets/logos/postgresql.svg" align="right" width="18%" alt="Slonik, the PostgreSQL elephant."></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/sql-title-dark.svg">
+    <img src="assets/readme/sql-title-light.svg" width="64%" height="52" align="texttop" alt="SQL_LAB">
+  </picture>
+</h1>
 
-<div align="center">
+**SQL queries, relational design, and the notes I come back to.**
 
-<h1>SQL_LAB</h1>
+I keep my database practice here as part of my **Java/Spring Boot backend learning**. PostgreSQL is my working database: a place to write queries, check what they return, and understand the data behind an application.
 
-**My SQL lab book.**
+**Recorded work:** [1 environment exercise](learning/postgresql/01_fundamentals/01_environment.sql) · [4 LeetCode SQL solutions](practice/leetcode-sql-50/01_select/)
 
-Queries, database models, practice attempts, and notes for the next time I need them.
+<p>
+  <a href="#learning-map">Learning&nbsp;map</a> &nbsp;·&nbsp;
+  <a href="#queries-and-practice">Queries&nbsp;&amp;&nbsp;practice</a> &nbsp;·&nbsp;
+  <a href="#working-setup">Use&nbsp;the&nbsp;lab</a> &nbsp;·&nbsp;
+  <a href="#connected-labs">Connected&nbsp;labs</a>
+</p>
 
-[Lab record](#lab-record) &nbsp; / &nbsp; [Progress](#progress) &nbsp; / &nbsp; [Schema sketchbook](#schema-sketchbook) &nbsp; / &nbsp; [Revision index](#revision-index)
+<h2 id="learning-map">
+  <a id="progress"></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/relations-dark.svg">
+    <img src="assets/readme/relations-light.svg" align="right" width="21%" alt="A primary key in Topic connects to the matching foreign key in Exercise.">
+  </picture>
+  SQL learning map
+</h2>
 
-</div>
-
-<br>
-
-I'm **Shaikh Mahad**, a BS Software Engineering student at **UBIT, University of Karachi**, building towards backend development. This repository holds the database side of that work.
-
-I use it to keep my SQL practice organised, track what I've covered, and find my own notes when I need to revise. Over time, I want the files and their history to show how my work improves: the queries I write, the models I design, and the decisions I can explain.
-
-<br>
-
-<a href="https://www.postgresql.org/"><img align="right" src="assets/logos/postgresql.svg" alt="PostgreSQL" width="150"></a>
-
-## Lab record
-
-**Current focus · PostgreSQL fundamentals**
-
-My recorded work covers the database environment, basic expressions, and four LeetCode filtering problems. This index points to the work already in the repository; I'll add entries as I study and practise more topics.
-
-<br clear="right">
-
-| Entry | Work recorded | File |
-| :--- | :--- | :--- |
-| **01 · Environment** | Database, role, schema, and arithmetic expressions. Five read-only statements. | [01_environment.sql](learning/postgresql/01_fundamentals/01_environment.sql) |
-| **LeetCode 1757 · Recyclable and Low Fat Products** | Filter products with `WHERE` and `AND`. | [1757_recyclable_and_low_fat_products.sql](practice/leetcode-sql-50/01_select/1757_recyclable_and_low_fat_products.sql) |
-| **LeetCode 595 · Big Countries** | Match either threshold with `OR`. | [0595_big_countries.sql](practice/leetcode-sql-50/01_select/0595_big_countries.sql) |
-| **LeetCode 584 · Find Customer Referee** | Exclude a referee while retaining `NULL` values. | [0584_find_customer_referee.sql](practice/leetcode-sql-50/01_select/0584_find_customer_referee.sql) |
-| **LeetCode 1683 · Invalid Tweets** | Filter by character count with `LENGTH`. | [1683_invalid_tweets.sql](practice/leetcode-sql-50/01_select/1683_invalid_tweets.sql) |
-
-## Progress
-
-**Recorded** means there's work in the repo to revisit. **Started** means some of the area is covered. **Planned** is still ahead of me.
-
-| Area | Status | Coverage / next work |
-| :--- | :--- | :--- |
-| PostgreSQL environment | **Recorded** | Connection context and basic `SELECT` expressions. |
-| Query fundamentals | **Started** | Recorded: `SELECT`, filtering, `AND`/`OR`, `NULL`, and `LENGTH`. Next: data types, sorting, and aggregates. |
-| Relationships & modelling | Planned | Keys, joins, subqueries, Chen ER, relational ERD, and EER models. |
-| Data integrity | Planned | Constraints, schema decisions, data changes, and transactions. |
-| Advanced queries | Planned | CTEs, window functions, views, and PostgreSQL functions. |
-| Performance | Planned | Indexes, `EXPLAIN`, execution plans, and query comparisons. |
-
-**Practice:** Four LeetCode SQL 50 solutions are recorded under [SELECT practice](practice/leetcode-sql-50/01_select/). HackerRank SQL is still planned.
-
-## Database choice
-
-This lab is about **SQL and relational design**. PostgreSQL is where I put that work into practice; MySQL, SQLite, SQL Server, and Oracle are part of the wider database landscape.
-
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/databases-mobile-dark.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/databases-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/databases-mobile-light.svg">
-  <img src="assets/databases-light.svg" alt="MySQL, SQLite, PostgreSQL, Microsoft SQL Server, and Oracle Database. PostgreSQL is highlighted as my working database." width="100%" loading="lazy">
-</picture>
+From reading rows to designing tables and understanding query plans. **Linked entries open recorded work; the remaining topics are still to add.** The saved [SQL roadmap](resources/sql-roadmap.pdf) is my broader reference.
 
 <details>
-<summary><strong>Why I picked PostgreSQL for my Java + Spring Boot path</strong></summary>
+<summary><strong>01 · Environment and query fundamentals</strong></summary>
 
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/backend-stack-mobile-dark.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/backend-stack-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/backend-stack-mobile-light.svg">
-  <img src="assets/backend-stack-light.svg" alt="Java + Spring Boot + PostgreSQL — the backend stack I am building towards." width="100%" loading="lazy">
-</picture>
-
-I was looking for a modern, open-source database to learn and then use in my **Java + Spring Boot** projects. PostgreSQL was recommended to me for that path, so I chose it as the database for this lab.
-
-The practical fit matters to me: PostgreSQL is [free and open source](https://www.postgresql.org/about/), [pgJDBC](https://jdbc.postgresql.org/) connects it to Java, and [Spring Boot supports SQL access through JDBC and JPA](https://docs.spring.io/spring-boot/reference/data/sql.html). I can keep using the same database as I move from standalone queries to application work.
-
-For now, I'm learning the database itself. Later, I want to bring these queries and schema decisions into my own Spring Boot projects, with enough understanding to explain what happens behind a repository method. Performance is part of that learning too: indexes, query plans, and measuring the queries I actually write.
+- [Connection context and expressions](learning/postgresql/01_fundamentals/01_environment.sql) — database, role, schema, and arithmetic with `SELECT`.
+- [Filtering practice](practice/leetcode-sql-50/01_select/) — `WHERE`, `AND`, `OR`, `IS NULL`, and `LENGTH`.
+- Data types, casts, aliases, sorting, `DISTINCT`, and `LIMIT`.
+- Boolean conditions, operator precedence, and how `NULL` affects comparisons.
 
 </details>
 
-## Schema sketchbook
+<details>
+<summary><strong>02 · Relationships and schema design</strong></summary>
 
-Database design belongs in this lab alongside the SQL. This is where I want to keep models, revisions, and the reasoning behind a schema.
+- Entities, attributes, candidate keys, primary keys, and foreign keys.
+- One-to-one, one-to-many, and many-to-many relationships.
+- Chen ER, relational ERD, EER, and translating a model into tables.
+- Normalization, constraints, and the tradeoffs behind a schema.
+- Inner, outer, and self joins; unmatched rows and accidental duplicates.
+
+</details>
+
+<details>
+<summary><strong>03 · Aggregation and multi-step queries</strong></summary>
+
+- Aggregate functions, `GROUP BY`, and `HAVING`.
+- Subqueries, correlated queries, `EXISTS`, and set operations.
+- CTEs for readable intermediate steps.
+- Window functions for ranking, running totals, and comparisons across rows.
+
+</details>
+
+<details>
+<summary><strong>04 · Data changes and integrity</strong></summary>
+
+- `CREATE`, `ALTER`, `INSERT`, `UPDATE`, and `DELETE`.
+- Defaults, identity columns, uniqueness, and referential integrity.
+- Transactions, `COMMIT`, `ROLLBACK`, and savepoints.
+- Isolation, concurrent updates, and the mistakes a constraint can prevent.
+
+</details>
+
+<details>
+<summary><strong>05 · Performance and application work</strong></summary>
+
+- Indexes, `EXPLAIN`, execution plans, and measured query comparisons.
+- Views and PostgreSQL functions.
+- Parameterized queries through JDBC, then persistence with Spring Boot.
+- Schema migrations and transaction boundaries in an application.
+
+Java + Spring Boot + PostgreSQL is the direction I'm working towards. Application integration is still ahead of the SQL exercises here.
+
+</details>
+
+<h2 id="queries-and-practice"><a id="lab-record"></a>Queries &amp; practice</h2>
+
+The current files are small, focused exercises. Each keeps its purpose or problem link beside the SQL so I can revisit the reasoning, change a condition, and check an edge case.
+
+| Entry | What I practise |
+| :--- | :--- |
+| [**01 · PostgreSQL environment**](learning/postgresql/01_fundamentals/01_environment.sql) | Five read-only statements: connection context and arithmetic. |
+| [**1757 · Recyclable and Low Fat Products**](practice/leetcode-sql-50/01_select/1757_recyclable_and_low_fat_products.sql) | Keep rows where both conditions hold — `AND`. |
+| [**595 · Big Countries**](practice/leetcode-sql-50/01_select/0595_big_countries.sql) | Match either threshold — `OR`. |
+| [**584 · Find Customer Referee**](practice/leetcode-sql-50/01_select/0584_find_customer_referee.sql) | Exclude one referee and retain missing values — `IS NULL`. |
+| [**1683 · Invalid Tweets**](practice/leetcode-sql-50/01_select/1683_invalid_tweets.sql) | Filter text by character count — `LENGTH`. |
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/readme/filter-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/readme/filter-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/filter-dark.svg">
+  <img src="assets/readme/filter-light.svg" width="100%" alt="AND filtering from exercise 1757. Of four illustrative Products rows, product IDs 1 and 3 have both low_fats and recyclable set to Y. The query returns those IDs.">
+</picture>
+
+<p><sub>A worked illustration of the saved 1757 query, using sample rows. Result order is unspecified without <code>ORDER BY</code>.</sub></p>
+
+<details>
+<summary><a id="revision-index"></a><strong>Revision checks</strong></summary>
+
+- **Environment:** explain what database, role, and schema mean before running the file again.
+- **AND / OR:** identify which rows change when I switch the operator or add parentheses.
+- **Missing values:** explain why `referee_id <> 2` alone drops rows with a `NULL` referee.
+- **Boundaries:** test the exact area, population, or text-length threshold as well as values on either side.
+
+LeetCode supplies the problem tables. Use the problem link in each file with its PostgreSQL editor; the environment exercise does not create those tables. HackerRank practice is still to add.
+
+</details>
+
+<details>
+<summary><a id="schema-sketchbook"></a><strong>Schema sketchbook · one model, two views</strong></summary>
+
+These are **conceptual README sketches**, separate from the runnable exercises. A topic contains exercises; each exercise belongs to one topic.
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/chen-mobile-dark.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/chen-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/chen-mobile-light.svg">
-  <img src="assets/chen-light.svg" alt="Chen ER sketch of the lab book: Topic has a one-to-many contains relationship with Exercise. Attributes appear as ovals and identifiers are underlined." width="100%" loading="lazy">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/chen-dark.svg">
+  <img src="assets/chen-light.svg" width="100%" alt="Chen ER concept: Topic contains Exercise in a one-to-many relationship. Identifiers are underlined, attributes are ovals, and Exercise has total participation.">
 </picture>
-
-<sub>Lab-book concept sketch · Chen ER · topics and their exercises.</sub>
-
-<details>
-<summary><strong>Other modelling views · relational ERD & EER</strong></summary>
-
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/erd-mobile-dark.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/erd-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/erd-mobile-light.svg">
-  <img src="assets/erd-light.svg" alt="Relational sketch of Topic and Exercise, linked by the topic_id foreign key." width="100%" loading="lazy">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/erd-dark.svg">
+  <img src="assets/erd-light.svg" width="100%" alt="Relational view of the same concept: Exercise.topic_id references the Topic primary key. Each exercise also has its own primary key.">
 </picture>
 
-<sub>Relational view · Topic and Exercise.</sub>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/eer-mobile-dark.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/eer-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/eer-mobile-light.svg">
-  <img src="assets/eer-light.svg" alt="EER sketch of WorkItem with SQLNote and DesignNote subtypes, using overlapping partial specialization." width="100%" loading="lazy">
-</picture>
-
-<sub>Conceptual EER view · work items and study notes.</sub>
+The first view describes the relationship; the second shows the tables and foreign key. Neither is an implemented schema in this lab yet.
 
 </details>
 
-<br>
+<h2 id="working-setup">Working with the lab</h2>
 
-<a href="https://www.jetbrains.com/datagrip/"><img align="right" src="assets/logos/datagrip.svg" alt="JetBrains DataGrip" width="140"></a>
+**PostgreSQL · DataGrip · VS Code · Git**
 
-## Working setup
-
-**PostgreSQL** is my main database, with **DataGrip** for SQL work and **VS Code** for repository files and notes. **Git** keeps the history as I add, revisit, and improve entries.
-
-Learning files live under `learning/postgresql/`, with the saved roadmap under `resources/`.
-
-<br clear="right">
+I use DataGrip for queries, VS Code for repository files and notes, and Git to keep attempts and corrections. The [PostgreSQL setup guide](learning/postgresql/README.md) covers both DataGrip and `psql`, with expected results for the first exercise.
 
 <details>
-<summary><strong>Repository layout</strong></summary>
+<summary><strong>Setup and first run</strong></summary>
 
-```text
-SQL_LAB/
-├── learning/
-│   └── postgresql/
-│       └── 01_fundamentals/
-│           └── 01_environment.sql
-├── practice/
-│   └── leetcode-sql-50/
-│       └── 01_select/
-│           ├── 1757_recyclable_and_low_fat_products.sql
-│           ├── 0595_big_countries.sql
-│           ├── 0584_find_customer_referee.sql
-│           └── 1683_invalid_tweets.sql
-├── resources/
-│   └── sql-roadmap.pdf
-├── assets/                         # README diagrams and logos
-└── README.md                       # Lab index and progress
+Have a running PostgreSQL server and an existing practice database. Then clone the lab:
+
+```sh
+git clone https://github.com/codewithmahad/SQL_LAB.git
+cd SQL_LAB
 ```
 
+In DataGrip, open [01_environment.sql](learning/postgresql/01_fundamentals/01_environment.sql), select your database connection, and run one statement at a time with `Ctrl+Enter`. It reads session information and evaluates expressions; it needs no sample tables.
+
+For `psql`, replace each `YOUR_...` value with your connection details and run from the repository root:
+
+```sh
+psql -X --set=ON_ERROR_STOP=on -h "YOUR_HOST" -p "YOUR_PORT" -U "YOUR_ROLE" -d "YOUR_DATABASE" -f "learning/postgresql/01_fundamentals/01_environment.sql"
+```
+
+The first three results depend on the connection. The arithmetic results are **30** and **5300**. Enter a password if prompted; keep credentials out of repository files.
+
+**Connection refused?** Check that the server is running and the host and port match. **Authentication failed?** Check the role, password, and server authentication settings.
+
 </details>
-
-<br>
-
-<a href="https://code.visualstudio.com/"><img align="right" src="assets/logos/vscode.svg" alt="Visual Studio Code" width="145"></a>
-
-## Revision index
-
-The shortcuts I want when I come back to a topic. As the lab grows, this will link to my worked examples, corrections, and notes from earlier attempts.
-
-**Next revision:** revisit the environment exercise and check that I can explain each result without the comments.
-
-<br clear="right">
-
-| Looking for | Reference |
-| :--- | :--- |
-| My environment & expression work | [Environment entry](learning/postgresql/01_fundamentals/01_environment.sql) |
-| My LeetCode filtering solutions | [SELECT practice](practice/leetcode-sql-50/01_select/) |
-| My study roadmap | [SQL roadmap PDF](resources/sql-roadmap.pdf) |
-| PostgreSQL syntax & behaviour | [SQL reference](https://www.postgresql.org/docs/current/sql.html) |
-| Database, role & schema functions | [Session information functions](https://www.postgresql.org/docs/current/functions-info.html) |
-| Problem sets | [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) · [HackerRank SQL](https://www.hackerrank.com/domains/sql) |
-
-<br>
-
-<a href="https://git-scm.com/"><img align="right" src="assets/logos/git.svg" alt="Git" width="110"></a>
-
-## Beyond the lab
-
-If something here is useful for your own revision, use it as a reference. Corrections are welcome through an [issue](https://github.com/codewithmahad/SQL_LAB/issues) or pull request.
-
-[**More of my work →**](https://github.com/codewithmahad?tab=repositories)
-
-<br clear="right">
-
-## Common connection errors
-
-- **Connection refused:** Check that the PostgreSQL server is running and that the host and port are correct.
-- **Password authentication failed:** Check the database username, password, and authentication configuration. Never include passwords in repository files.
 
 <details>
-<summary><code>-- a note to future me</code></summary>
+<summary><strong>Repository layout and references</strong></summary>
 
-```text
-brain cache expired.
-restoring from SQL_LAB...
-```
+- **[learning/postgresql/](learning/postgresql/)** — fundamentals and the setup guide.
+- **[practice/leetcode-sql-50/](practice/leetcode-sql-50/)** — saved problem solutions, grouped by topic.
+- **[resources/](resources/)** — the saved SQL roadmap.
+- **[assets/](assets/README.md)** — README artwork, source generators, and credits.
+
+**PostgreSQL:** [Tutorial](https://www.postgresql.org/docs/current/tutorial.html) · [SQL reference](https://www.postgresql.org/docs/current/sql.html) · [Session functions](https://www.postgresql.org/docs/current/functions-info.html) · [psql](https://www.postgresql.org/docs/current/app-psql.html).
+
+**Practice:** [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) · [HackerRank SQL](https://www.hackerrank.com/domains/sql). **DataGrip:** [Run queries](https://www.jetbrains.com/help/datagrip/run-a-query.html).
 
 </details>
 
-<sub>Shaikh Mahad · BSSE, UBIT &nbsp; / &nbsp; <a href="assets/README.md">Artwork credits</a> &nbsp; / &nbsp; <a href="#sql_lab">Back to top ↑</a></sub>
+Found a mistake? [Open an issue](https://github.com/codewithmahad/SQL_LAB/issues) with the file, query, and result.
+
+<!-- learning-labs:start -->
+<h2 id="connected-labs"><a id="backend-foundations"></a>How the labs fit together</h2>
+
+<p>
+This lab covers the database side of my backend learning: writing queries, designing relational models, and understanding PostgreSQL.
+I work through Java concepts in&#8239;<a href="https://github.com/codewithmahad/JAVA_LAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/labs/java-dark.svg"><img src="assets/readme/labs/java-light.svg" width="88" height="20" align="texttop" alt="JAVA_LAB"></picture></a>, practise algorithms in&#8239;<a href="https://github.com/codewithmahad/DSA_LAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/labs/dsa-dark.svg"><img src="assets/readme/labs/dsa-light.svg" width="77" height="20" align="texttop" alt="DSA_LAB"></picture></a>, and keep my Linux and Bash coursework notes in&#8239;<a href="https://github.com/codewithmahad/LINUX_LAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/labs/linux-dark.svg"><img src="assets/readme/labs/linux-light.svg" width="96" height="20" align="texttop" alt="LINUX_LAB"></picture></a>.
+</p>
+<!-- learning-labs:end -->
+
+<hr>
+
+<p align="center">
+  <sub>
+    Maintained by <a href="https://github.com/codewithmahad">Shaikh Mahad</a>
+    &nbsp;·&nbsp; <a href="https://shaikhmahad.vercel.app/">Portfolio</a>
+    &nbsp;·&nbsp; <a href="assets/README.md">Artwork credits</a>
+    &nbsp;·&nbsp; <a href="#sql_lab">Back to top ↑</a>
+  </sub>
+</p>

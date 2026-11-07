@@ -1,8 +1,10 @@
 # README artwork
 
-The README uses original product logos beside its section headings and in two database/stack compositions. The logos keep their original shapes and colours; GitHub's heading rules provide the visual overlap beside sections. All generated artwork has light/dark and desktop/mobile versions.
+The README uses PostgreSQL blue, the original Slonik elephant, and small illustrations tied to the SQL in the lab. The [current title, query illustration, and shared learning links](readme/README.md) have their own source notes. Original artwork has light and dark versions; wide diagrams also have mobile layouts.
 
-## Original artwork
+## Earlier database and modelling artwork
+
+The Chen and relational ERD sketches remain in the README's schema dropdown. The database lineup, future stack, and EER study are retained here as additional artwork.
 
 - `databases-{light,dark}.svg` — MySQL, SQLite, PostgreSQL, Microsoft SQL Server, and Oracle Database, with PostgreSQL highlighted as the working database. This is context for the database choice, not a claim of proficiency in all five.
 - `backend-stack-{light,dark}.svg` — Java + Spring Boot + PostgreSQL, shown inside the database-choice dropdown as a future backend direction.
@@ -17,14 +19,15 @@ Notation references: [Mermaid's crow's foot ER reference](https://mermaid.js.org
 
 ## Rebuild
 
-Both generators use **Python's standard library**. The [diagram generator](source/build_readme_assets.py) draws the models; the [banner generator](source/build_readme_banners.py) also reads the credited local logos. They need no downloads or extra packages:
+All three generators use **Python's standard library**. The [identity generator](source/build_readme_identity.py) draws the current title and query illustrations; the [diagram generator](source/build_readme_assets.py) draws the models; the [banner generator](source/build_readme_banners.py) reads the credited local logos. They need no downloads or extra packages:
 
 ```sh
+python assets/source/build_readme_identity.py
 python assets/source/build_readme_assets.py
 python assets/source/build_readme_banners.py
 ```
 
-This regenerates 20 SVGs: 12 diagram variants and 8 database-lineup/stack variants. Typography uses system font fallbacks. Logo originals stay unchanged. Embedded copies have isolated SVG IDs and CSS classes to avoid collisions, and Oracle's transparent outer padding is cropped without changing the wordmark. The generated SVGs are self-contained and load no remote resources.
+This regenerates 28 SVGs: 8 current identity/query variants, 12 modelling variants, and 8 database-lineup/stack variants. Typography uses system font fallbacks. Shared lab links and practice-profile buttons are unchanged copies from DSA_LAB and are not regenerated. Logo originals stay unchanged. Embedded copies have isolated SVG IDs and CSS classes to avoid collisions, and Oracle's transparent outer padding is cropped without changing the wordmark. The generated SVGs are self-contained and load no remote resources.
 
 ## Logo credits
 

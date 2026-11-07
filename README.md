@@ -187,11 +187,17 @@ The first three results depend on the connection. The arithmetic results are **3
 Found a mistake? [Open an issue](https://github.com/codewithmahad/SQL_LAB/issues) with the file, query, and result.
 
 <!-- learning-labs:start -->
-<h2 id="connected-labs"><a id="backend-foundations"></a>How the labs fit together</h2>
+<p id="connected-labs" role="heading" aria-level="2"><a id="backend-foundations"></a><strong>How the labs fit together</strong></p>
 
 <p>
 This lab covers the database side of my backend learning: writing queries, designing relational models, and understanding PostgreSQL.
 I work through Java concepts in&#8239;<a href="https://github.com/codewithmahad/JAVA_LAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/labs/java-dark.svg"><img src="assets/readme/labs/java-light.svg" width="88" height="20" align="texttop" alt="JAVA_LAB"></picture></a>, practise algorithms in&#8239;<a href="https://github.com/codewithmahad/DSA_LAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/labs/dsa-dark.svg"><img src="assets/readme/labs/dsa-light.svg" width="77" height="20" align="texttop" alt="DSA_LAB"></picture></a>, and keep my Linux and Bash coursework notes in&#8239;<a href="https://github.com/codewithmahad/LINUX_LAB"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/labs/linux-dark.svg"><img src="assets/readme/labs/linux-light.svg" width="96" height="20" align="texttop" alt="LINUX_LAB"></picture></a>.
+</p>
+
+<p>
+  <a href="https://leetcode.com/u/mahad2006/"><img src="assets/readme/leetcode-brand.svg" width="83" height="30" alt="LeetCode: my profile"></a>
+  <a href="https://www.hackerrank.com/codewithmahad"><img src="assets/readme/hackerrank-brand.svg" width="95" height="30" alt="HackerRank: my profile"></a>
+  <a href="https://codolio.com/profile/codewithmahad"><img src="assets/readme/codolio-brand.svg" width="78" height="30" alt="Codolio: my profile"></a>
 </p>
 <!-- learning-labs:end -->
 

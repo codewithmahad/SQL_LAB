@@ -21,7 +21,7 @@ The [generator](../source/build_readme_identity.py) uses only Python's standard 
 
 ## Shared learning links
 
-The closing section uses 20-pixel inline links to Java, DSA, and Linux. Its heading and compact footer match the other learning labs, while the paragraph describes SQL_LAB's role in query practice and relational design. The button artwork is reused unchanged from [DSA_LAB](https://github.com/codewithmahad/DSA_LAB). SQL problem-set links stay with the practice references; the personal coding-profile row belongs in DSA_LAB.
+The closing section uses 20-pixel inline links to Java, DSA, and Linux. Its heading and compact footer match the other learning labs, while the paragraph describes SQL_LAB's role in query practice and relational design. The button artwork is reused unchanged from [DSA_LAB](https://github.com/codewithmahad/DSA_LAB). SQL problem-set links stay with the practice references; the personal coding-profile row is shared across the learning labs.
 
 - **Java:** the coffee-cup geometry comes from [Devicon](https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg), adapted to JAVA_LAB's blue and orange. Lettering follows [JAVA_LAB's title](https://github.com/codewithmahad/JAVA_LAB).
 - **SQL:** the PostgreSQL elephant comes from [Devicon](https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg). The header uses the existing, unmodified [local logo](../logos/postgresql.svg).

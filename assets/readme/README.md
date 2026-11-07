@@ -21,14 +21,18 @@ The [generator](../source/build_readme_identity.py) uses only Python's standard 
 
 ## Shared learning links
 
-The closing section uses 20-pixel inline links to Java, DSA, and Linux. Its heading and compact footer match the other learning labs, while the paragraph describes SQL_LAB's role in query practice and relational design. The button artwork is reused unchanged from [DSA_LAB](https://github.com/codewithmahad/DSA_LAB). SQL problem-set links stay with the practice references; the personal coding-profile row is shared across the learning labs.
+The closing section has a paragraph specific to the host repository, a row of links to the other three labs, a short practice-profile line, and the LeetCode, HackerRank, and Codolio buttons. The lab and profile buttons are 40 pixels high.
 
-- **Java:** the coffee-cup geometry comes from [Devicon](https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg), adapted to JAVA_LAB's blue and orange. Lettering follows [JAVA_LAB's title](https://github.com/codewithmahad/JAVA_LAB).
-- **SQL:** the PostgreSQL elephant comes from [Devicon](https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg). The header uses the existing, unmodified [local logo](../logos/postgresql.svg).
-- **DSA:** the original orange search tree and lettering come from [DSA_LAB](https://github.com/codewithmahad/DSA_LAB).
-- **Linux:** the buttons embed **Tux, by Larry Ewing, created using The GIMP**. [Original artwork and reuse terms](http://isc.tamu.edu/~lewing/linux/) · [LINUX_LAB's source notes](https://github.com/codewithmahad/LINUX_LAB/blob/main/assets/README.md#tux).
-- **LeetCode, HackerRank, and Codolio:** the profile buttons retain the platform graphics and outlined lettering from the [profile README artwork](https://github.com/codewithmahad/codewithmahad/tree/main/assets/profile/contact), as reused in DSA_LAB.
+The lab buttons use one solid pale fill each: Java white, DSA amber, PostgreSQL blue, and Linux silver. Their Segoe UI Semibold labels are converted to paths and vertically centered by their actual glyph bounds. Icon and label groups are centered together. The paired light/dark filenames use the same solid palette so the links stay consistent in both themes.
 
-The existing [Devicon MIT notice](../licenses/devicon-LICENSE.txt) covers the Java and PostgreSQL source artwork. Product and platform names and marks belong to their respective owners.
+- **Java:** the Devicon coffee-cup geometry, adapted to Java.com blue and orange.
+- **DSA:** an original orange search-tree symbol.
+- **SQL:** the original Devicon PostgreSQL elephant.
+- **Linux:** unchanged **Tux, by Larry Ewing, created using The GIMP**. [Original artwork and reuse terms](http://isc.tamu.edu/~lewing/linux/) · [LINUX_LAB source notes](https://github.com/codewithmahad/LINUX_LAB/blob/main/assets/README.md#tux).
+
+The existing [Devicon MIT notice](../licenses/devicon-LICENSE.txt) covers the Java and PostgreSQL source artwork. The coding-profile buttons retain the original platform graphics from [my profile artwork](https://github.com/codewithmahad/codewithmahad/tree/main/assets/profile/contact).
 
 [All artwork and logo credits](../README.md) · [Back to SQL_LAB](../../README.md)
+
+
+The connected-labs title is a normal section heading. Lab buttons use black text on light fills; Java has a white background and a larger coffee-cup mark, SQL uses a stronger blue, and DSA has black branches and secondary-node outlines around orange centers. The social-button content is enlarged by 15% inside the same 40-pixel height, with wider backgrounds to preserve its proportions.
